@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<podcrack>
+  <library user_id="2">
+    <podcast>
+      <id>467905</id>
+      <name>The History of Rome</name>
+      <description>A weekly podcast tracing the history of the Roman Empire, beginning with Aeneas's arrival in Italy and ending with the exile of Romulus Augustulus, last Emperor of the Western Roman Empire. Now complete!</description>
+      <author>Mike Duncan</author>
+      <artwork>https://static.libsyn.com/p/assets/1/2/f/c/12fc067020662e91/THoR_Logo_1500x1500.jpg</artwork>
+      <rss>https://historyofrome.libsyn.com/rss</rss>
+      <object>{"id":467905,"title":"The History of Rome","url":"https:\/\/historyofrome.libsyn.com\/rss","originalUrl":"https:\/\/historyofrome.libsyn.com\/rss","link":"http:\/\/thehistoryofrome.typepad.com\/the_history_of_rome\/","description":"A weekly podcast tracing the history of the Roman Empire, beginning with Aeneas's arrival in Italy and ending with the exile of Romulus Augustulus, last Emperor of the Western Roman Empire. Now complete!","author":"Mike Duncan","ownerName":"Mike Duncan","image":"https:\/\/static.libsyn.com\/p\/assets\/1\/2\/f\/c\/12fc067020662e91\/THoR_Logo_1500x1500.jpg","artwork":"https:\/\/static.libsyn.com\/p\/assets\/1\/2\/f\/c\/12fc067020662e91\/THoR_Logo_1500x1500.jpg","lastUpdateTime":1701814249,"lastCrawlTime":1701814238,"lastParseTime":1701814293,"inPollingQueue":0,"priority":-1,"lastGoodHttpStatusTime":1701814238,"lastHttpStatus":200,"contentType":"application\/rss xml; charset=utf-8","itunesId":261654474,"generator":"Libsyn WebEngine 2.0","language":"en","type":0,"dead":0,"crawlErrors":0,"parseErrors":0,"categories":{"20":"Education","28":"History"},"locked":0,"explicit":false,"podcastGuid":"5c5cbb2c-a28b-5316-98fe-a2862168d13d","medium":"podcast","episodeCount":192,"imageUrlHash":2320598832,"newestItemPubdate":1501155000}</object>
+      <metadata/>
+    </podcast>
+    <podcast>
+      <id>740120</id>
+      <name>Seincast: A Seinfeld Podcast</name>
+      <description>A retrospective on all 180 episodes of Seinfeld being hosted by two guys who can barely run their own lives. NOTE: we pour over the excruciating minutia of every single, weekly event. To the idiot-mobile!</description>
+      <author>Seincast</author>
+      <artwork>https://static.libsyn.com/p/assets/e/5/0/0/e5002784c486fb1ad959afa2a1bf1c87/logo_seincastv2.png</artwork>
+      <rss>https://seincast.libsyn.com/rss</rss>
+      <object>{"id":740120,"title":"Seincast: A Seinfeld Podcast","url":"https:\/\/seincast.libsyn.com\/rss","originalUrl":"https:\/\/seincast.libsyn.com\/rss","link":"http:\/\/seincast.libsyn.com\/webpage","description":"A retrospective on all 180 episodes of Seinfeld being hosted by two guys who can barely run their own lives. NOTE: we pour over the excruciating minutia of every single, weekly event. To the idiot-mobile!","author":"Seincast","ownerName":"Seincast","image":"https:\/\/static.libsyn.com\/p\/assets\/e\/5\/0\/0\/e5002784c486fb1ad959afa2a1bf1c87\/logo_seincastv2.png","artwork":"https:\/\/static.libsyn.com\/p\/assets\/e\/5\/0\/0\/e5002784c486fb1ad959afa2a1bf1c87\/logo_seincastv2.png","lastUpdateTime":1701388279,"lastCrawlTime":1701388268,"lastParseTime":1701388321,"inPollingQueue":0,"priority":-1,"lastGoodHttpStatusTime":1701388268,"lastHttpStatus":200,"contentType":"application\/rss xml; charset=utf-8","itunesId":896361045,"generator":"Libsyn WebEngine 2.0","language":"en","type":0,"dead":0,"crawlErrors":0,"parseErrors":0,"categories":{"104":"Tv","105":"Film"},"locked":0,"explicit":false,"podcastGuid":"16b95a8e-70ba-5a9a-a646-dafcff56ab70","medium":"podcast","episodeCount":200,"imageUrlHash":1482654641,"newestItemPubdate":1628784000}</object>
+      <metadata/>
+    </podcast>
+    <podcast>
+      <id>323619</id>
+      <name>Casual Preppers Podcast - Prepping, Survival, Entertainment.</name>
+      <description>Bringing prepping, survival and conspiracy goodness direct to your dirty little ear holes!</description>
+      <author>Casual Preppers</author>
+      <artwork>https://deow9bq0xqvbj.cloudfront.net/image-logo/1211878/ituneslogo.jpg</artwork>
+      <rss>https://casualpreppers.podbean.com/feed.xml</rss>
+      <object>{"id":323619,"title":"Casual Preppers Podcast - Prepping, Survival, Entertainment.","url":"https:\/\/casualpreppers.podbean.com\/feed.xml","originalUrl":"https:\/\/casualpreppers.podbean.com\/feed.xml","link":"https:\/\/casualpreppers.podbean.com","description":"Bringing prepping, survival and conspiracy goodness direct to your dirty little ear holes!","author":"Casual Preppers","ownerName":"Casual Preppers","image":"https:\/\/deow9bq0xqvbj.cloudfront.net\/image-logo\/1211878\/ituneslogo.jpg","artwork":"https:\/\/deow9bq0xqvbj.cloudfront.net\/image-logo\/1211878\/ituneslogo.jpg","lastUpdateTime":1701789429,"lastCrawlTime":1701789421,"lastParseTime":1701789441,"inPollingQueue":0,"priority":5,"lastGoodHttpStatusTime":1701789421,"lastHttpStatus":200,"contentType":"text\/xml; charset=UTF-8","itunesId":1121846301,"generator":"https:\/\/podbean.com\/?v=5.5","language":"en","type":0,"dead":0,"crawlErrors":0,"parseErrors":0,"categories":{"16":"Comedy","20":"Education","25":"Self Improvement","77":"Society","78":"Culture","82":"Philosophy"},"locked":0,"explicit":true,"podcastGuid":"047f121b-c797-556e-bacd-6f6847415c6a","medium":"podcast","episodeCount":200,"imageUrlHash":2277507638,"newestItemPubdate":1701760500}</object>
+      <metadata/>
+    </podcast>
+    <podcast>
+      <id>554087</id>
+      <name>The Magnus Archives</name>
+      <description>&#x201C;Make your statement, face your fear.&#x201D; A weekly horror fiction podcast examining what lurks in the archives of the Magnus Institute, an organisation dedicated to researching the esoteric and the weird. Join Jonathan Sims as he explores the archive, but be warned, as he looks into its depths something starts to look back&#x2026; New episodes every Thursday produced by Rusty Quill, featuring guest actors, short stories, serial plots and more. The Magnus Protocol launches in January 2024. Get bonus content on Patreon Hosted on Acast. See acast.com/privacy for more information.</description>
+      <author>Rusty Quill</author>
+      <artwork>https://assets.pippa.io/shows/61ba0ccb1a8cbea8343cf12c/show-cover.jpg</artwork>
+      <rss>http://rss.acast.com/themagnusarchives</rss>
+      <object>{"id":554087,"title":"The Magnus Archives","url":"http:\/\/rss.acast.com\/themagnusarchives","originalUrl":"http:\/\/rss.acast.com\/themagnusarchives","link":"https:\/\/www.rustyquill.com","description":"\u201cMake your statement, face your fear.\u201d A weekly horror fiction podcast examining what lurks in the archives of the Magnus Institute, an organisation dedicated to researching the esoteric and the weird. Join Jonathan Sims as he explores the archive, but be warned, as he looks into its depths something starts to look back\u2026 New episodes every Thursday produced by Rusty Quill, featuring guest actors, short stories, serial plots and more. The Magnus Protocol launches in January 2024. Get bonus content on Patreon Hosted on Acast. See acast.com\/privacy for more information.","author":"Rusty Quill","ownerName":"Rusty Quill","image":"https:\/\/assets.pippa.io\/shows\/61ba0ccb1a8cbea8343cf12c\/show-cover.jpg","artwork":"https:\/\/assets.pippa.io\/shows\/61ba0ccb1a8cbea8343cf12c\/show-cover.jpg","lastUpdateTime":1701734932,"lastCrawlTime":1701734925,"lastParseTime":1701734958,"inPollingQueue":0,"priority":-1,"lastGoodHttpStatusTime":1701734925,"lastHttpStatus":200,"contentType":"application\/xml","itunesId":1095138637,"generator":"acast.com","language":"en","type":0,"dead":0,"crawlErrors":0,"parseErrors":0,"categories":{"1":"Arts","7":"Performing","26":"Fiction","27":"Drama"},"locked":0,"explicit":false,"podcastGuid":"9a3fbbf1-5cc4-59c7-8d7f-de22c03304bc","medium":"podcast","episodeCount":295,"imageUrlHash":4181621461,"newestItemPubdate":1701446427}</object>
+      <metadata/>
+    </podcast>
+    <podcast>
+      <id>596681</id>
+      <name>This Podcast is Making Me Thirsty (The Seinfeld Podcast)</name>
+      <description>The #1 Destination For "Seinfeld" Fans. We talk with Seinfeld Actors/Actresses, Writers and Crew. We welcome well-known, Seinfeld Super Fans including Authors, Comedians, TV and Radio Hosts, and Podcasters. We are a podcast dedicated to Seinfeld, the last, great sitcom of our time. Support this podcast: https://podcasters.spotify.com/pod/show/thisthirsty/support</description>
+      <author>This Podcast is Making Me Thirsty</author>
+      <artwork>https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/4686914/4686914-1587342080465-4b76c2630637a.jpg</artwork>
+      <rss>https://anchor.fm/s/1c884048/podcast/rss</rss>
+      <object>{"id":596681,"title":"This Podcast is Making Me Thirsty (The Seinfeld Podcast)","url":"https:\/\/anchor.fm\/s\/1c884048\/podcast\/rss","originalUrl":"https:\/\/anchor.fm\/s\/1c884048\/podcast\/rss","link":"https:\/\/www.seinfeldpodcast.com\/","description":"The #1 Destination For \"Seinfeld\" Fans. We talk with Seinfeld Actors\/Actresses, Writers and Crew. We welcome well-known, Seinfeld Super Fans including Authors, Comedians, TV and Radio Hosts, and Podcasters. We are a podcast dedicated to Seinfeld, the last, great sitcom of our time. Support this podcast: https:\/\/podcasters.spotify.com\/pod\/show\/thisthirsty\/support","author":"This Podcast is Making Me Thirsty","ownerName":"This Podcast is Making Me Thirsty","image":"https:\/\/d3t3ozftmdmh3i.cloudfront.net\/production\/podcast_uploaded_nologo\/4686914\/4686914-1587342080465-4b76c2630637a.jpg","artwork":"https:\/\/d3t3ozftmdmh3i.cloudfront.net\/production\/podcast_uploaded_nologo\/4686914\/4686914-1587342080465-4b76c2630637a.jpg","lastUpdateTime":1701763113,"lastCrawlTime":1701834424,"lastParseTime":1701763114,"inPollingQueue":0,"priority":2,"lastGoodHttpStatusTime":1701763111,"lastHttpStatus":200,"contentType":"application\/rss xml; charset=utf-8","itunesId":1509261864,"generator":"Anchor Podcasts","language":"en","type":0,"dead":0,"crawlErrors":0,"parseErrors":0,"categories":{"104":"Tv","105":"Film"},"locked":0,"explicit":false,"podcastGuid":"8aa52c02-d280-584f-a88b-083a6b07a577","medium":"podcast","episodeCount":214,"imageUrlHash":4291026418,"newestItemPubdate":1701752400}</object>
+      <metadata/>
+    </podcast>
+  </library>
+</podcrack>

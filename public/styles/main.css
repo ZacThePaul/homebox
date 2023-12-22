@@ -1,0 +1,576 @@
+@font-face {
+  src: url("http://192.168.1.23/public/fonts/inter/Inter-Black.ttf");
+  font-family: "Inter";
+  font-weight: 900;
+}
+@font-face {
+  src: url("http://192.168.1.23/public/fonts/inter/Inter-ExtraBold.ttf");
+  font-family: "Inter";
+  font-weight: 800;
+}
+@font-face {
+  src: url("http://192.168.1.23/public/fonts/inter/Inter-Bold.ttf");
+  font-family: "Inter";
+  font-weight: 700;
+}
+@font-face {
+  src: url("http://192.168.1.23/public/fonts/inter/Inter-SemiBold.ttf");
+  font-family: "Inter";
+  font-weight: 600;
+}
+@font-face {
+  src: url("http://192.168.1.23/public/fonts/inter/Inter-Medium.ttf");
+  font-family: "Inter";
+  font-weight: 500;
+}
+@font-face {
+  src: url("http://192.168.1.23/public/fonts/inter/Inter-Regular.ttf");
+  font-family: "Inter";
+  font-weight: 400;
+}
+@font-face {
+  src: url("http://192.168.1.23/public/fonts/inter/Inter-Light.ttf");
+  font-family: "Inter";
+  font-weight: 300;
+}
+@font-face {
+  src: url("http://192.168.1.23/public/fonts/inter/Inter-ExtraLight.ttf");
+  font-family: "Inter";
+  font-weight: 200;
+}
+@font-face {
+  src: url("http://192.168.1.23/public/fonts/inter/Inter-Thin.ttf");
+  font-family: "Inter";
+  font-weight: 100;
+}
+#close {
+  display: none;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: "Inter";
+  font-weight: 400;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  body {
+    flex-direction: row;
+  }
+}
+body header {
+  width: 100%;
+  height: 75px;
+  max-width: none;
+  background-color: #1C1C1C;
+  border-right: 1px solid rgba(133, 133, 133, 0.3137254902);
+}
+@media screen and (min-width: 768px) {
+  body header {
+    width: 25%;
+    max-width: 250px;
+    height: 100vh;
+  }
+}
+body main {
+  width: 100%;
+  background-color: #262626;
+  color: #858585;
+  flex-grow: 1;
+}
+body main .content-container {
+  width: 90%;
+  margin: 20px auto 0;
+}
+
+header {
+  transition: margin-left 300ms;
+}
+header .menu-container, header .logo-container {
+  width: 100%;
+  margin: auto;
+  padding-left: 20px;
+}
+@media screen and (min-width: 767px) {
+  header .menu-container, header .logo-container {
+    width: 85%;
+    padding-left: 0;
+  }
+}
+header .logo-container {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  header .logo-container {
+    display: block;
+  }
+}
+header .logo-container .homebox-logo {
+  width: 70px;
+}
+header .logo-container i {
+  font-size: 36px;
+}
+header .logo-container h4 {
+  font-size: 24px;
+  margin: 0;
+}
+header .menu-container ul {
+  display: flex;
+  width: 95%;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  gap: 10px;
+  padding-left: 0;
+}
+header .menu-container ul::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header .menu-container ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+header .menu-container ul li {
+  width: fit-content;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #858585;
+  border-radius: 7px;
+  border-width: 1px;
+  padding: 0 10px;
+  border-radius: 20px;
+  justify-content: center;
+  background-color: #FE4602;
+}
+@media screen and (min-width: 768px) {
+  header .menu-container ul li {
+    width: 100%;
+    gap: 15px;
+    justify-content: space-between;
+    height: 40px;
+    background-color: unset;
+  }
+}
+header .menu-container ul li i {
+  color: white;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  header .menu-container ul li i {
+    width: 20px;
+    font-size: 18px;
+  }
+}
+header .menu-container ul li .menu-item-anchor {
+  color: white;
+  width: auto;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  header .menu-container ul li .menu-item-anchor {
+    color: #858585;
+    width: 100%;
+  }
+  header .menu-container ul li .menu-item-anchor:hover {
+    color: #f6f6f6;
+  }
+}
+header .menu-container ul li:hover {
+  color: #f6f6f6;
+}
+@media screen and (min-width: 768px) {
+  header .menu-container ul .menu-item-active {
+    background-color: rgba(133, 133, 133, 0.2588235294);
+    color: white;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.3411764706);
+  }
+  header .menu-container ul .menu-item-active a {
+    color: white;
+  }
+}
+header .is_off {
+  display: none;
+}
+header #podcast-popup {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(43, 43, 43);
+  height: 120px;
+  width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.368627451);
+}
+header #podcast-popup .podcast-popup-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+header #podcast-popup .podcast-popup-container .player {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 15px;
+  padding-left: 10px;
+  flex-wrap: wrap;
+}
+header #podcast-popup .podcast-popup-container .player .player-playing-now-artwork img {
+  width: 60px;
+  border-radius: 5px;
+}
+header #podcast-popup .podcast-popup-container .player .player-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header #podcast-popup .podcast-popup-container .player .player-controls .player-rewind {
+  font-size: 36px;
+  color: #FD4603;
+  cursor: pointer;
+}
+header #podcast-popup .podcast-popup-container .player .player-controls #player-play {
+  font-size: 48px;
+  color: #FD4603;
+  width: 36px;
+  cursor: pointer;
+}
+header #podcast-popup .podcast-popup-container .player .player-controls .is_paused i.fa-pause {
+  display: none;
+}
+header #podcast-popup .podcast-popup-container .player .player-controls .is_playing i.fa-play {
+  display: none;
+}
+header #podcast-popup .podcast-popup-container .player .player-controls .player-forward {
+  font-size: 36px;
+  color: #FD4603;
+  cursor: pointer;
+}
+header #podcast-popup .podcast-popup-container .player .player-time-container {
+  width: 100%;
+}
+header #podcast-popup .podcast-popup-container audio {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+body.fss-page #bucket-container .single-bucket {
+  margin: 15px 0;
+}
+
+#podcrack-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  box-shadow: 3px 6px 25px -15px black;
+  padding: 10px 20px;
+}
+@media screen and (max-width: 767px) {
+  #podcrack-header {
+    flex-wrap: wrap;
+  }
+}
+#podcrack-header h1 {
+  margin: 0;
+  width: 10%;
+}
+#podcrack-header h1 .podcrack-desktop-logo {
+  display: none;
+}
+#podcrack-header h1 .podcrack-mobile-logo {
+  display: block;
+}
+@media screen and (min-width: 767px) {
+  #podcrack-header h1 {
+    width: auto;
+  }
+  #podcrack-header h1 .podcrack-mobile-logo {
+    display: none;
+  }
+  #podcrack-header h1 .podcrack-desktop-logo {
+    display: block;
+  }
+}
+#podcrack-header h1 a {
+  color: #f6f6f6;
+  text-decoration: none;
+}
+#podcrack-header .search-container {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  width: 85%;
+}
+#podcrack-header .search-container input {
+  width: 100%;
+  height: 30px;
+  font-size: 17px;
+  height: 40px;
+}
+@media screen and (min-width: 767px) {
+  #podcrack-header .search-container input {
+    width: 300px;
+  }
+}
+#podcrack-header .search-container button {
+  height: 45px;
+  border: none;
+}
+
+#podcast-container {
+  height: fit-content;
+  max-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  flex-direction: row;
+  overflow: scroll;
+}
+@media screen and (min-width: 767px) {
+  #podcast-container {
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    background: white;
+    border: 1px solid gray;
+    max-width: 400px;
+  }
+}
+
+.results-podcast {
+  width: 100%;
+  max-height: 130px;
+  border-top: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.results-podcast .results-podcast-details {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+.results-podcast .results-podcast-details .results-podcast-artwork {
+  width: 50px;
+  height: 50px;
+}
+.results-podcast .results-podcast-view-episodes {
+  width: 100%;
+}
+.results-podcast .results-podcast-episodes {
+  width: 100%;
+}
+
+body.podcrack-single-page .content-container {
+  width: 100%;
+  margin-top: 0;
+}
+body.podcrack-single-page .content-container .single-podcast {
+  height: 70vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 90%;
+  margin: auto;
+}
+@media screen and (min-width: 767px) {
+  body.podcrack-single-page .content-container .single-podcast {
+    height: 650px;
+  }
+}
+body.podcrack-single-page .content-container .single-podcast::-webkit-scrollbar {
+  display: none;
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px 0;
+}
+@media screen and (min-width: 767px) {
+  body.podcrack-single-page .content-container .single-podcast .single-podcast-details {
+    flex-wrap: nowrap;
+    gap: 15px;
+  }
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-details .single-podcast-text h2 {
+  color: #F6F6F6;
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-details .single-podcast-text a {
+  border: 3px solid #FD4603;
+  padding: 5px 10px;
+  color: #FD4603;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-details .single-podcast-logo img {
+  max-width: 200px;
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-episodes-index .single-podcast-single-episode {
+  border-top: 1px solid gray;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-episodes-index .single-podcast-single-episode .is_paused i.fa-pause {
+  display: none;
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-episodes-index .single-podcast-single-episode .is_playing i.fa-play {
+  display: none;
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-episodes-index .single-podcast-single-episode h4 {
+  margin: 0;
+  color: #F6F6F6;
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-episodes-index .single-podcast-single-episode p {
+  margin: 0;
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-episodes-index .single-podcast-single-episode div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-episodes-index .single-podcast-single-episode div:first-child {
+  gap: 5px;
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-episodes-index .single-podcast-single-episode div:last-child {
+  width: 100%;
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-episodes-index .single-podcast-single-episode div:last-child:last-child {
+  justify-content: end;
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-episodes-index .single-podcast-single-episode:last-child {
+  margin-bottom: 200px;
+}
+body.podcrack-single-page .content-container .single-podcast .single-podcast-episodes-index .single-podcast-single-episode a i {
+  font-size: 36px;
+  color: #FD4603;
+}
+
+body.podcrack-page header {
+  height: 100vh;
+}
+@media screen and (max-width: 767px) {
+  body.podcrack-page header {
+    height: 75px;
+  }
+}
+body.podcrack-page main {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+}
+body.podcrack-page main .content-container {
+  width: 100%;
+  margin-top: 0;
+}
+@media screen and (min-width: 767px) {
+  body.podcrack-page main {
+    width: 90%;
+  }
+}
+body.podcrack-page main .podcrack-library {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: calc(100% - 40px);
+  margin: auto;
+  padding: 10px 0;
+}
+@media screen and (min-width: 767px) {
+  body.podcrack-page main .podcrack-library {
+    width: 95%;
+    margin: 20px auto 0;
+  }
+}
+body.podcrack-page main .podcrack-library .podcrack-library-item {
+  width: 20%;
+  max-width: 150px;
+}
+body.podcrack-page main .podcrack-library .podcrack-library-item a img {
+  width: 100%;
+  box-shadow: 2px 0px 13px -8px black;
+  transition: transform 200ms;
+  border-radius: 3px;
+}
+body.podcrack-page main .podcrack-library .podcrack-library-item a img:hover {
+  transform: scale(1.05);
+}
+
+body.lists-app-page .show {
+  display: block;
+}
+body.lists-app-page .hide {
+  display: none;
+}
+body.lists-app-page .content-container {
+  height: 100vh;
+}
+body.lists-app-page .content-container #self-lists-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body.lists-app-page .content-container #self-lists-container .self-list-item {
+  width: 33%;
+}
+body.lists-app-page .content-container #self-lists-container .self-list-item .self-list {
+  padding: 15px 15px 15px 25px;
+  border: 2px solid;
+  border-radius: 3px;
+  min-height: 100px;
+  box-shadow: 0 0 25px -8px #1a1a1a;
+}
+body.lists-app-page .content-container #self-lists-container .self-list-item .self-list h5 {
+  margin: 0;
+}
+body.lists-app-page .content-container .list-add-new-container ul {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+body.lists-app-page .content-container .list-add-new-container ul label {
+  width: 100%;
+}
+body.lists-app-page .content-container .list-add-new-container ul .active-list-item {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  min-width: 250px;
+  max-width: 90%;
+}
+body.lists-app-page .content-container .list-add-new-container ul button.delete-list-item {
+  border: 2px solid red;
+  background: transparent;
+  color: red;
+}
+body.lists-app-page .content-container .hide-utilities * {
+  visibility: hidden;
+}
+body.lists-app-page .content-container .utility-container {
+  color: red;
+}
+
+/*# sourceMappingURL=main.css.map */

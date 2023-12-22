@@ -1,0 +1,53 @@
+[
+    {
+        "name": "SuperUserAccess",
+        "permission": [
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "ListResources:*"
+                ],
+                "Resources": [
+                    "usm"
+                ]
+            },
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "ListResources:self"
+                ],
+                "Resources": [
+                    "fss"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "UserAccess",
+        "permission": [
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "ListResources:self"
+                ],
+                "Resources": [
+                    "fss"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "UserAccess",
+        "permission": [
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "ListResources:granted"
+                ],
+                "Resources": [
+                    "fss"
+                ]
+            }
+        ]
+    }
+]

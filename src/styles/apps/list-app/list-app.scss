@@ -1,0 +1,85 @@
+@import 'single-list.scss';
+
+body.lists-app-page {
+
+    .show {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .content-container {
+        height: 100vh;
+
+        // .list-index-container {
+        //     display: none;
+        // }
+
+        // .list-edit-container {
+        //     display: none;
+        // }
+
+        #self-lists-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .self-list-item {
+                width: 33%;
+
+                .self-list {
+                    padding: 15px 15px 15px 25px;
+                    border: 2px solid;
+                    border-radius: 3px;
+                    min-height: 100px;
+                    box-shadow: 0 0 25px -8px #1a1a1a;
+    
+                    h5 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .list-add-new-container {
+            ul {
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
+
+                label {
+                    width: 100%;
+                }
+
+                // li {
+
+                // }
+
+                .active-list-item {
+                    background-color: white;
+                    color: black;
+                    padding: 10px;
+                    min-width: 250px;
+                    max-width: 90%;
+                }
+
+                button.delete-list-item {
+                    border: 2px solid red;
+                    background: transparent;
+                    color: red;
+                }
+            }
+        }
+
+        .hide-utilities {
+            * {
+                visibility: hidden;
+            }
+        }
+        .utility-container {
+            color: red;
+        }
+    }
+}

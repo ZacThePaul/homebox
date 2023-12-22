@@ -1,0 +1,134 @@
+$background: #121212;
+$panel: #1E1E1E;
+$text: #E1E1E1;
+$purp: #bb86fc;
+
+body.dark-theme {
+    background-color: $background;
+    font-family: Monsterrat, sans-serif;
+
+    h2 {
+        color: $purp;
+        padding: 25px 40px;
+        box-shadow: 1px 1px 2px 0px black;
+        border-radius: 10px;
+        background-color: $panel;
+    }
+
+    .hb-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+
+        a {
+            color: $purp;
+        }
+
+        span {
+            color: $text;
+        }
+    }
+
+    .content-container {
+        max-width: 90%;
+        margin: auto;
+
+        @media screen and (min-width: 768px) {
+            & {
+                max-width: 75%;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            input {
+                width: 100%;
+                height: 35px;
+                background-color: transparent;
+                border: solid;
+                border-radius: 5px;
+                padding-left: 8px;
+                color: $text;
+
+                &:first-child {
+                    width: 100%;
+                }
+            }
+        }
+
+        #bucket-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    
+            .single-bucket {
+                display: flex;
+                flex-wrap: wrap;
+                background-color: $panel;
+                border-radius: 10px;
+                color: $text;
+                justify-content: space-between;
+                font-family: Montserrat, sans-serif;
+                height: 200px;
+                box-shadow: 0px 1px 8px 1px black;
+                transition: box-shadow 300ms;
+                width: 48%;
+
+                @media screen and (min-width: 768px) {
+                    width: 25%;
+                }
+    
+                &:hover {
+                    box-shadow: 0px 1px 3px 1px black
+                }
+
+                * {
+                    width: 90%;
+                    margin: auto;
+                }
+    
+                .bucket-title {
+                    font-size: 36px;
+                    text-align: center;
+                    color: $text;
+                }
+    
+                .bucket-obj-count {
+                    color: $text;
+                }
+    
+                .object-delete {
+                    color: $text;
+                }
+            }
+        }
+    }
+
+
+}
+
+body.dark-theme.single-bucket {
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            input {
+                color: $text;
+                width: 100%;
+                height: 30px;
+                background-color: transparent;
+                border: 2px solid $purp;
+                border-radius: 5px;
+            }
+        }
+}
+
+body.light-theme {
+    background-color: white;
+}

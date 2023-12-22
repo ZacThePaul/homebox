@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "terser": "^5.24.0"
+  },
+  "scripts": {
+    "minify": "terser src/scripts/main.js -o public/scripts/main.min.js -c -m",
+    "minify-podcrack": "terser src/scripts/apps/podcrack.js -o public/scripts/apps/podcrack.min.js -c -m",
+    "minify-podcrack-mini": "terser src/scripts/apps/podcrack-mini.js -o public/scripts/apps/podcrack-mini.min.js -c -m",
+    "minify-lists": "terser src/scripts/apps/list-app/lists.js -o public/scripts/apps/list-app/lists.min.js -c -m",
+    "watch-sass": "sass --watch src/styles/main.scss public/styles/main.css"
+  }
+}

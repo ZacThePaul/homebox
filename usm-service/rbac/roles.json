@@ -1,0 +1,12 @@
+[
+    {
+        "name": "superuser",
+        "permissions": [
+            {
+                "action": "list",
+                "resources": "*",
+                "state": "yes"            
+            }
+        ]
+    }
+]

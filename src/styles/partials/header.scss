@@ -1,0 +1,224 @@
+header {
+    transition: margin-left 300ms;
+
+    .menu-container, .logo-container {
+        width: 100%;
+        margin: auto;
+        padding-left: 20px;
+
+        @media screen and (min-width: 767px) {
+            width: 85%;
+            padding-left: 0;
+        }
+    }
+
+    .logo-container {
+        display: flex;
+        color: white;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        display: none;
+
+        @media screen and (min-width: 767px) {
+            display: block;
+        }
+
+        // NOTICE - max width, not min here
+        @media screen and (max-width: $tablet) {
+            
+        }
+
+        .homebox-logo {
+            width: 70px;
+        }
+
+        i {
+            font-size: 36px;
+        }
+
+        h4 {
+            font-size: 24px;
+            margin: 0;
+        }
+    }
+
+    .menu-container {
+
+        ul {
+            display: flex;
+            width: 95%;
+            flex-wrap: nowrap;
+            overflow: scroll;
+            gap: 10px;
+            padding-left: 0;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            @media screen and (min-width: $tablet) {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            li {
+                width: fit-content;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: #858585;
+                border-radius: 7px;
+                border-width: 1px;
+                padding: 0 10px;
+                border-radius: 20px;
+                justify-content: center;
+                background-color: #FE4602;
+
+                @media screen and (min-width: $tablet) {
+                    width: 100%;
+                    gap: 15px;
+                    justify-content: space-between;
+                    height: 40px;
+                    background-color: unset;
+                }
+
+                i {
+                    color: white;
+                    font-size: 14px;
+
+                    @media screen and (min-width: $tablet) {
+                        width: 20px;
+                        font-size: 18px;
+                    }
+                }
+
+                .menu-item-anchor {
+                    color: white;
+
+                    width: auto;
+                    display: block;
+                    text-decoration: none;
+                    font-size: 16px;
+
+                    @media screen and (min-width: $tablet) {
+                        color: #858585;
+                        width: 100%;
+
+                        &:hover {
+                            color: #f6f6f6;
+                        }
+                    }
+                }
+
+                &:hover {
+                    color: #f6f6f6;
+                }
+            }
+
+            .menu-item-active {
+
+                @media screen and (min-width: $tablet) {
+                    background-color: #85858542;
+                    color: white;
+                    border-style: solid;
+                    border-color: #ffffff57;
+    
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .is_off {
+        display: none;
+    }
+
+    #podcast-popup {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(43, 43, 43);
+        height: 120px;
+        width: 100%;
+        border-top: 1px solid #8080805e;
+
+        .podcast-popup-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100%;
+
+            .player {
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+                gap: 15px;
+                padding-left: 10px;
+                flex-wrap: wrap;
+
+                .player-playing-now-artwork {
+                    img {
+                        width: 60px;
+                        border-radius: 5px;
+                    }
+                }
+
+                .player-controls {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    .player-rewind {
+                        font-size: 36px;
+                        color: #FD4603;
+                        cursor: pointer;
+                    }
+
+                    #player-play {
+                        font-size: 48px;
+                        color: #FD4603;
+                        width: 36px;
+                        cursor: pointer;
+                    }
+
+                    .is_paused {
+                        i.fa-pause {
+                            display: none;
+                        }
+                    }
+
+                    .is_playing {
+                        i.fa-play {
+                            display: none;
+                        }
+                    }
+
+                    .player-forward {
+                        font-size: 36px;
+                        color: #FD4603;
+                        cursor: pointer;
+                    }
+                }
+
+                .player-time-container {
+                    width: 100%;
+                }
+
+            }
+            
+            audio {
+                visibility: hidden;
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+
+}

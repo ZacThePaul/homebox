@@ -1,0 +1,55 @@
+$inter-font-path: 'http://192.168.1.23/public/fonts/inter';
+
+@font-face {
+    src: url("#{$inter-font-path}/Inter-Black.ttf");
+    font-family: 'Inter';
+    font-weight: 900;
+}
+
+@font-face {
+    src: url("#{$inter-font-path}/Inter-ExtraBold.ttf");
+    font-family: 'Inter';
+    font-weight: 800;
+}
+
+@font-face {
+    src: url("#{$inter-font-path}/Inter-Bold.ttf");
+    font-family: 'Inter';
+    font-weight: 700;
+}
+
+@font-face {
+    src: url("#{$inter-font-path}/Inter-SemiBold.ttf");
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+@font-face {
+    src: url("#{$inter-font-path}/Inter-Medium.ttf");
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+@font-face {
+    src: url("#{$inter-font-path}/Inter-Regular.ttf");
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+@font-face {
+    src: url("#{$inter-font-path}/Inter-Light.ttf");
+    font-family: 'Inter';
+    font-weight: 300;
+}
+
+@font-face {
+    src: url("#{$inter-font-path}/Inter-ExtraLight.ttf");
+    font-family: 'Inter';
+    font-weight: 200;
+}
+
+@font-face {
+    src: url("#{$inter-font-path}/Inter-Thin.ttf");
+    font-family: "Inter";
+    font-weight: 100;
+}

@@ -1,0 +1,115 @@
+#podcrack-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    box-shadow: 3px 6px 25px -15px black;
+    padding: 10px 20px;
+
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        margin: 0;
+        width: 10%;
+
+        .podcrack-desktop-logo {
+            display: none;
+        }
+
+        .podcrack-mobile-logo {
+            display: block;
+        }
+
+        @media screen and (min-width: 767px) {
+            width: auto;
+
+            .podcrack-mobile-logo {
+                display: none;
+            }
+
+            .podcrack-desktop-logo {
+                display: block;
+            }
+        }
+        
+        a {
+            color: #f6f6f6;
+            text-decoration: none;
+        }
+
+        
+    }
+
+    .search-container {
+
+        justify-content: flex-end;
+        align-items: center;
+        display: flex;
+        width: 85%;
+
+        input {
+            width: 100%;
+            height: 30px;
+            font-size: 17px;
+            height: 40px;
+
+            @media screen and (min-width: 767px) {
+                width: 300px;
+            }
+        }
+
+        button {
+            height: 45px;
+            border: none;
+        }
+    }
+}
+
+#podcast-container {
+    height: fit-content;
+    max-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-direction: row;
+    overflow: scroll;
+
+    @media screen and (min-width: 767px) {
+        position: absolute;
+        top: 100px;
+        right: 35px;
+        background: white;
+        border: 1px solid gray;
+        max-width: 400px;
+    }
+}
+
+.results-podcast {
+    width: 100%;
+    max-height: 130px;
+    border-top: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+
+    .results-podcast-details {
+        width: 100%;
+        display: flex;
+        gap: 15px;  
+
+        .results-podcast-artwork {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .results-podcast-view-episodes {
+        width: 100%;
+    }
+
+    .results-podcast-episodes {
+        width: 100%;
+    }
+}

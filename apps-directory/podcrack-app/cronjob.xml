@@ -1,0 +1,15 @@
+<cronjobs>
+    <job>
+        <name>Job1</name>
+        <schedule>0 * * * *</schedule>
+        <command>/usr/bin/php /var/www/html/apps/podcrack/cronjob.php download_podcast >> /var/www/html/apps/podcrack/cron_output.log 2>&1</command>
+        <enabled>true</enabled>
+    </job>
+    <job>
+        <name>Job2</name>
+        <schedule>15 3 * * *</schedule>
+        <command>/usr/bin/php /path/to/your/script2.php</command>
+        <enabled>false</enabled>
+    </job>
+    <!-- More jobs can be added here -->
+</cronjobs>

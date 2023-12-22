@@ -1,0 +1,62 @@
+@import 'podcrack-header.scss';
+@import 'single-podcast.scss';
+
+body.podcrack-page {
+
+    header {
+        height: 100vh;
+
+        @media screen and (max-width: 767px) {
+            height: 75px;
+        }
+    }
+
+    main {
+
+        .content-container {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        width: 100%;
+        margin: 0 auto;
+        height: 100vh;
+
+        @media screen and (min-width: 767px) {
+            width: 90%;
+        }
+
+        .podcrack-library {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            // had to use calc because there was some weird issue where padding was sending it off-screen
+            width: calc( 100% - 40px );
+            margin: auto;
+            padding: 10px 0;
+
+            @media screen and (min-width: 767px) {
+                width: 95%;
+                margin: 20px auto 0;
+            }
+
+            .podcrack-library-item {
+                width: 20%;
+                max-width: 150px;
+
+                a {
+                    img {
+                        width: 100%;
+                        box-shadow: 2px 0px 13px -8px black;
+                        transition: transform 200ms;
+                        border-radius: 3px;
+    
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

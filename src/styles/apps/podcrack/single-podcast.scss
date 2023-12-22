@@ -1,0 +1,126 @@
+body.podcrack-single-page {
+
+    // header {
+    //     height: 100vh;
+        
+    //     @media screen and (max-width: 767px) {
+    //         height: 115px;
+    //     }
+    // }
+
+    .content-container {
+        width: 100%;
+        margin-top: 0;
+
+        .single-podcast {
+            height: 70vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: 90%;
+            margin: auto;
+
+            @media screen and (min-width: 767px) {
+                height: 650px;
+            }
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .single-podcast-details {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 25px 0;
+
+                @media screen and (min-width: 767px) {
+                    flex-wrap: nowrap;
+                    gap: 15px;
+                }
+
+                .single-podcast-text {
+                    h2 {
+                        color: #F6F6F6;
+                    }
+                    
+                    a {
+                        border: 3px solid #FD4603;
+                        padding: 5px 10px;
+                        color: #FD4603;
+                        text-decoration: none;
+                        border-radius: 5px;
+                        margin-top: 5px;
+                    }
+                }
+
+                .single-podcast-logo {
+                    img {
+                        max-width: 200px;
+                    }
+                }
+            }
+            .single-podcast-episodes-index {
+                .single-podcast-single-episode {
+                    border-top: 1px solid gray;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 15px 0;
+
+                    .is_paused {
+                        i.fa-pause {
+                            display: none;
+                        }
+                    }
+
+                    .is_playing {
+                        i.fa-play {
+                            display: none;
+                        }
+                    }
+
+                    h4 {
+                        margin: 0;
+                        color: #F6F6F6;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+
+                    div {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        &:first-child {
+                            gap: 5px;
+                        }
+                        &:last-child {
+                            width: 100%;
+
+                            &:last-child {
+                                justify-content: end;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 200px;
+                    }
+
+                    a {
+                        i {
+                            font-size: 36px;
+                            color: #FD4603;
+                        }
+                    }
+                }
+            }
+
+            
+            // .single-podcast-episodes-index {
+                
+            // }
+        }
+    }
+}

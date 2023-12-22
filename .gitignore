@@ -1,0 +1,10 @@
+node_modules
+.env
+.access.log
+fss-service/storage
+fss-service/buckets.json
+usm-service/usm.db
+vendor
+apps-directory/list-app/lists.xml
+apps-directory/list-app/podcrack.xml
+public/images/icons/kit-e63c5d2ed2-web
